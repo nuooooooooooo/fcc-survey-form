@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinese class sign up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="form-header">
+      <h1 id="title">法语课程报名表</h1>
+      <p id="description">
+        你对法国感兴趣?你想在法国买法棍时用一口流利的法语和店员沟通？你希望看《天使爱美丽》不需要字母也能看懂？如果你在前面的三个问题回答都为"是！"，那么你就来对地方了！
+      </p>
+      <p id="description">
+        我们学院有包括初级到高级水平的法语班，什么水平的人都可以来报名我们的课程。
+      </p>
+    </header>
+    <form action="" method="GET" class="chinese-form" id="survey-form">
+      <div class="form-row">
+        <label for="name" id="name-label" class="left-column">*姓名</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="王浩然"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label for="email" id="email-label" class="left-column"
+          >*电子邮件</label
+        >
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="aaa@163.com"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label for="number" id="number-label" class="left-column">*年龄</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="1"
+          max="99"
+          placeholder="18"
+          required
+        />
+      </div>
+      <div class="form-row">
+        <label for="dropdown" class="left-column">目前水平</label>
+        <select name="dropdown" id="dropdown">
+          <option value="beginner">入门</option>
+          <option value="lower-intermediate">初级</option>
+          <option value="upper-intermediate">中级</option>
+          <option value="lower-advanced">高级</option>
+          >
+        </select>
+      </div>
+      <fieldset class="legacy">
+        <div class="radiocontainer">
+          <legend class="left-column">法语学了多久?</legend>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="study-length"
+                id="study-length-1"
+                value="less-six-month"
+                checked
+              />
+              <label for="study-length-1">六个月以下</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="study-length"
+                id="study-length-2"
+                value="six-month-year"
+              />
+              <label for="study-length-2">六个月到一年</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="study-length"
+                id="study-length-3"
+                value="year-or-more"
+              />
+              <label for="study-length-3">超过一年</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="study-length"
+                id="study-length-4"
+                value="many-years"
+              />
+              <label for="study-length-4"> 两年以上</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <div class="form-row">
+        <div class="left-column">
+          报名的主要原因
+          <p class="not-important">(可多选)</p>
+        </div>
+        <ul class="checkbox-grid">
+          <label for="for-fun"
+            ><li>
+              <input
+                type="checkbox"
+                name="for-fun"
+                id="for-fun"
+                value="culture"
+              />
+              <span>对法语感兴趣</span>
+            </li></label
+          >
+
+          <label for="for-work"
+            ><li>
+              <input
+                type="checkbox"
+                name="for-work"
+                id="for-work"
+                value="for-work"
+              />
+              <span>工作原因</span>
+            </li></label
+          >
+
+          <label for="for-school"
+            ><li>
+              <input
+                type="checkbox"
+                name="for-school"
+                id="for-school"
+                value="for-school"
+              />
+              <span>提高法语成绩</span>
+            </li></label
+          >
+        </ul>
+      </div>
+      <div class="form-row">
+        <label for="other" class="left-column">其他内容</label>
+        <textarea name="other" id="other"></textarea>
+      </div>
+      <div class="form-row">
+        <p class="additionalinfo not-important">
+          带有 * 标志的内容必填
+        </p>
+      </div>
+      <div class="form-row">
+        <button id="submit">提交</button>
+      </div>
+    </form>
+    <footer>
+      Coded by
+      <a
+        href="https://www.freecodecamp.org/fccea878291-2387-41c1-9516-504172fd1078"
+        target="_blank"
+        >Manon
+      </a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
